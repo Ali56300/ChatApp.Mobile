@@ -13,7 +13,7 @@ namespace ChatApp.Mobile.Services.Core
 
         public ChatService()
         {
-            hubConnection = new HubConnectionBuilder().WithUrl("http:localhost:12345/ChatHub").Build(); 
+            hubConnection = new HubConnectionBuilder().WithUrl("http://192.168.1.127/ChatHub").Build(); 
 
         }
         public async Task Connect()
