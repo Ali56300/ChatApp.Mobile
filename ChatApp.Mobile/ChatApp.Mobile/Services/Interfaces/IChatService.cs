@@ -9,7 +9,7 @@ namespace ChatApp.Mobile.Services.Interfaces
     {
         Task Connect();
         Task Disconnect();
-        Task SendMessage(string userId, string messgae);
+        Task SendMessage(string userId, string message);
         void ReceiveMessage(Action<string, string> GetMessageAndUser); 
 
     }

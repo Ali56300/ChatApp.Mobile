@@ -2,11 +2,13 @@
 
 namespace ChatApp.Mobile.Views
 {
-    public partial class ChatRoomPageViewModel : ContentPage
+    public partial class ChatRoomPage : ContentPage
     {
-        public ChatRoomPageViewModel()
+        public ChatRoomPage()
         {
             InitializeComponent();
         }
+
+       
     }
 }

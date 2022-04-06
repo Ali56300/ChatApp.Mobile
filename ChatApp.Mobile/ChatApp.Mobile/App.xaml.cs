@@ -33,7 +33,7 @@ namespace ChatApp.Mobile
 
             containerRegistry.Register<IChatService, ChatService>();
            
-            containerRegistry.RegisterForNavigation<ChatRoomPageViewModel, ChatRoomPageViewModelViewModel>();
+            containerRegistry.RegisterForNavigation<ChatRoomPage, ChatRoomPageViewModel>();
         }
     }
 }

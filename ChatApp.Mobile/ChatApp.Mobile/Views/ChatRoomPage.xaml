@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ChatApp.Mobile.Views.ChatRoomPage">
+    <Grid RowDefinitions="*, auto">
+        <ListView ItemsSource="{Binding MessageList}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid RowDefinitions="auto,auto">
+                                <Label Text="{Binding UserName}"/>
+                                <Label Text="{Binding Message}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        <StackLayout Grid.Row="1">
+            <Entry Text="{Binding Message}"></Entry>
+            <Button Text="Send" Command="{Binding SendMsgCommand}"/>
+            
+        </StackLayout>
+        
+        
+    </Grid>
+  
+</ContentPage>
