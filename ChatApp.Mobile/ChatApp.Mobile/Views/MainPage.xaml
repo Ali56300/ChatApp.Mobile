@@ -12,12 +12,12 @@
 
         <StackLayout Grid.Row="1"
                     Margin="20,0 " >
-            <Entry Text="{Binding Email}" Placeholder="Email"></Entry>
-            <Entry Text="{Binding Password}" Placeholder="Password" IsPassword="True"> </Entry>
+            <Entry Text="{Binding UserName}" Placeholder="Name"></Entry>
+            
             
             <Frame Style="{StaticResource ButtonFrameStyle}" >
                 <Button Style="{StaticResource ButtonStyle}"  
-                        Text="Sign In" Command="{Binding SignInCommand}"/>
+                        Text="Join" Command="{Binding NavigateToChatPageCommand}"/>
                 
                 
             </Frame>

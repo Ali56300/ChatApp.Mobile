@@ -6,7 +6,7 @@
              x:Class="ChatApp.Mobile.App">
   <Application.Resources>
     
-    <Color x:Key="PrimaryColor">#1B1F7B</Color>
+    <Color x:Key="PrimaryColor">DarkRed</Color>
     <Color x:Key="WhiteColor">#FFFFFF</Color>
 
     <!-- Application resource dictionary -->

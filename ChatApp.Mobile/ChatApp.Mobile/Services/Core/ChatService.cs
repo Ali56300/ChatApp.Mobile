@@ -29,14 +29,14 @@ namespace ChatApp.Mobile.Services.Core
             await hubConnection.InvokeAsync("SendMessage", userId, message); 
         }
 
-        public void ReceiveMessage(Action<string, string> GetMessageAndUser)
+        public void ReceiveMessage(Action<string, string> getMessageAndUser)
         {
             throw new NotImplementedException();
         }
 
-        public void RecivedMessage(Action<string, string> GetMessageAndUser)
+        public void ReceivedMessage(Action<string, string> getMessageAndUser)
         {
-            hubConnection.On("ReceiveMessage", GetMessageAndUser); 
+            hubConnection.On("ReceiveMessage", getMessageAndUser); 
         }
 
 
